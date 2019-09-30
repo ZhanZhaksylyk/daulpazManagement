@@ -50,11 +50,8 @@
 			background-color: #8B8B8B;
 		}
 		.block{
-			width: 685px;
 			margin-top: 100px;
-		}
-		#about {
-			height: 427px;
+			width: 685px;
 		}
 		#about div p{
 			line-height: 150%;
@@ -120,8 +117,16 @@
 			font-weight: normal;
 			font-size: 1em;
 		}
-
-
+		.main{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.card{
+			width: 200px;
+			height: 240px;
+			background-color: #C4C4C4;
+		}
 	</style>
 </head>
 <body>
@@ -240,10 +245,22 @@
 			</div>
 		</div>
 	</div>
-	<div id='projects'>
+	<div id='projects' class="block">
 		<p class="text head">Проекты</p>
+		<div class="main">
+			<div class="card"></div>
+			<div class="card"></div>
+			<div class="card"></div>
+		</div>
 	</div>
-	<div id='clients'></div>
+	<div id='clients' class="block">
+		<p class="text head">Клиенты</p>
+		<div class="main">
+			<div class="card"></div>
+			<div class="card"></div>
+			<div class="card"></div>
+		</div>
+	</div>
 	<div id='footer'></div>
 </body>
 </html>
